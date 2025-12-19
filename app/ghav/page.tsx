@@ -14,10 +14,20 @@ export default function GhavLandingPage() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
-          <a className="px-8 py-3 bg-[#c7b8f5] text-white rounded-md font-semibold hover:scale-105 transition">
+          <a
+            href="https://linktr.ee/giftofghav"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 bg-[#c7b8f5] text-white rounded-md font-semibold hover:scale-105 transition"
+          >
             🎧 listen now
           </a>
-          <a className="px-8 py-3 bg-[#ff7c81] text-white rounded-md font-semibold hover:scale-105 transition">
+          <a
+            href="https://discord.com/invite/Zn4W9Tqr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 bg-[#ff7c81] text-white rounded-md font-semibold hover:scale-105 transition"
+          >
             💬 join the community
           </a>
         </div>
@@ -36,9 +46,30 @@ export default function GhavLandingPage() {
       <section className="ghav-section bg-ghav-offwhite">
         <h2 className="text-3xl font-bold text-center mb-10">listen to the latest</h2>
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
-          <div className="h-64 bg-gray-200 flex items-center justify-center">album 1</div>
-          <div className="h-64 bg-gray-200 flex items-center justify-center">album 2</div>
-          <div className="h-64 bg-gray-200 flex items-center justify-center">album 3</div>
+          <a
+            href="https://soundcloud.com/paulogav/carry-on-paulo-gav"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-64 bg-gray-200 flex items-center justify-center hover:scale-105 transition"
+          >
+            carry On - ghav!
+          </a>
+          <a
+            href="https://soundcloud.com/paulogav/late-night-drive"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-64 bg-gray-200 flex items-center justify-center hover:scale-105 transition"
+          >
+            late night drive - ghav!
+          </a>
+          <a
+            href="https://soundcloud.com/paulogav/goin-dummy-freestyle-paulogav-x-dolce"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-64 bg-gray-200 flex items-center justify-center hover:scale-105 transition"
+          >
+            goin' dummy freestyle - ghav!
+          </a>
         </div>
       </section>
 
@@ -46,9 +77,15 @@ export default function GhavLandingPage() {
       <section className="ghav-section bg-ghav-gray">
         <h2 className="text-3xl font-bold text-center mb-10">a peek behind the scenes</h2>
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
-          <div className="h-64 bg-white flex items-center justify-center">recording</div>
-          <div className="h-64 bg-white flex items-center justify-center">production</div>
-          <div className="h-64 bg-white flex items-center justify-center">writing</div>
+          <div className="h-64 bg-white flex items-center justify-center">
+            recording
+          </div>
+          <div className="h-64 bg-white flex items-center justify-center">
+            production
+          </div>
+          <div className="h-64 bg-white flex items-center justify-center">
+            writing
+          </div>
         </div>
       </section>
 
@@ -59,7 +96,12 @@ export default function GhavLandingPage() {
           this is where we hang out, share music, and vibe together.
           it’s not just about listening — it’s about being heard.
         </p>
-        <a className="inline-block px-8 py-3 bg-[#c7b8f5] text-white rounded-md font-semibold hover:scale-105 transition">
+        <a
+          href="https://linktr.ee/giftofghav"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-8 py-3 bg-[#c7b8f5] text-white rounded-md font-semibold hover:scale-105 transition"
+        >
           join the community
         </a>
       </section>
@@ -70,7 +112,12 @@ export default function GhavLandingPage() {
         <p className="text-lg max-w-xl mx-auto mb-6 text-gray-700">
           no spam. just updates, music drops, and sometimes memes.
         </p>
-        <a className="inline-block px-8 py-3 bg-[#ff7c81] text-white rounded-md font-semibold hover:scale-105 transition">
+        <a
+          href="https://commoninja.site/773366b6-ebe0-4dd3-b77a-76bf70f22ba9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-8 py-3 bg-[#ff7c81] text-white rounded-md font-semibold hover:scale-105 transition"
+        >
           join the email list
         </a>
       </section>
@@ -81,9 +128,30 @@ export default function GhavLandingPage() {
           ghav! is a feeling, not a person. thanks for being here.
         </p>
         <div className="flex justify-center gap-6 text-gray-600">
-          <a className="hover:text-black">instagram</a>
-          <a className="hover:text-black">twitter</a>
-          <a className="hover:text-black">soundcloud</a>
+          <a
+            href="https://www.instagram.com/giftofghav"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            instagram
+          </a>
+          <a
+            href="https://www.twitch.tv/giftofghav"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            twitch
+          </a>
+          <a
+            href="https://soundcloud.com/paulogav"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            soundcloud
+          </a>
         </div>
       </footer>
 
