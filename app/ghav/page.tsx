@@ -1,5 +1,8 @@
 'use client';
 
+import { Instagram, Twitch, Music } from 'lucide-react';
+
+
 export default function GhavLandingPage() {
   return (
     <main className="font-sans text-gray-800">
@@ -143,38 +146,53 @@ export default function GhavLandingPage() {
         </a>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-ghav-lavender py-10 text-center">
-        <p className="text-gray-600 mb-4">
-          ghav! is a feeling, not a person. thanks for being here.
-        </p>
-        <div className="flex justify-center gap-6 text-gray-600">
-          <a
-            href="https://www.instagram.com/giftofghav"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black"
-          >
-            instagram
-          </a>
-          <a
-            href="https://www.twitch.tv/giftofghav"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black"
-          >
-            twitch
-          </a>
-          <a
-            href="https://soundcloud.com/paulogav"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black"
-          >
-            soundcloud
-          </a>
+      {/* FOOTER — UPDATED */}
+      <footer className="bg-ghav-lavender py-10 px-8">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+
+          {/* LEFT */}
+          <p className="text-gray-700 text-sm max-w-md">
+            ghav! is a feeling, not a person.
+            <br />
+            thanks for being here.
+          </p>
+
+          {/* RIGHT — SOCIAL ICONS */}
+          <div className="flex items-center gap-6 text-gray-800">
+            <a
+              href="https://www.instagram.com/giftofghav"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-800 font-medium hover:text-black transition-colors"
+            >
+              <Instagram size={18} strokeWidth={2} />
+              instagram
+            </a>
+
+            <a
+              href="https://www.twitch.tv/giftofghav"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-800 font-medium hover:text-black transition-colors"
+            >
+              <Twitch size={18} strokeWidth={2} />
+              twitch
+            </a>
+
+            <a
+              href="https://soundcloud.com/paulogav"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-800 font-medium hover:text-black transition-colors"
+            >
+              <Music size={18} strokeWidth={2} />
+              soundcloud
+            </a>
+          </div>
+
         </div>
       </footer>
+
 
     </main>
   );
