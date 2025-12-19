@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base colors */
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --accent: #ff5c00; /* subtle highlight color */
+}
+
+/* Body styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Smooth fade-in for elements when scrolling */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Link styles */
+a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Nav hover effects */
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+/* Fade-in + slide up animation for sections */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nav link hover underline animation */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #f97316; /* Orange */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Button subtle scale on hover */
+.button-hover {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button-hover:hover {
+  transform: scale(1.05);
+}
+
+/* === GHAV Page Styles === */
+
+/* GHAV background and text (if you want to override body colors specifically on GHAV pages) */
+.ghav-body {
+  background-color: #f9f6f7; /* soft off-white */
+  color: #333; /* dark gray text */
+}
+
+/* GHAV buttons */
+.ghav-button {
+  background-color: #d6c6f7; /* soft lavender */
+  color: #333;
+  border-radius: 8px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ghav-button:hover {
+  background-color: #cbbff3;
+  transform: scale(1.05);
+}
+
+/* GHAV links */
+.ghav-link {
+  color: #c96c6c; /* coral accent */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.ghav-link:hover {
+  color: #a95454;
+  text-decoration: underline;
+}
+
+/* GHAV section spacing */
+.ghav-section {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* GHAV fade-in animation */
+.ghav-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.ghav-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* GHAV section backgrounds */
+.bg-ghav-offwhite {
+  background-color: #f9f6f7;
+}
+
+.bg-ghav-lavender {
+  background-color: #efeaff;
+}
+
+.bg-ghav-coral {
+  background-color: #fff0ee;
+}
+
+.bg-ghav-gray {
+  background-color: #f1f1f1;
+}
+
+/* Section spacing consistency */
+.ghav-section {
+  padding: 5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .ghav-section {
+    padding: 7rem 4rem;
+  }
+}
+
+/* ===== GHAV NAVBAR ===== */
+
+.ghav-nav {
+  color: #1f1f1f;
+}
+
+.ghav-nav a {
+  color: #2f2f2f;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.ghav-nav a:hover {
+  color: #ff6b6b; /* coral */
+}
+
