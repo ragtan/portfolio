@@ -43,32 +43,53 @@ export default function GhavLandingPage() {
       </section>
 
       {/* LISTEN */}
-      <section className="ghav-section bg-ghav-offwhite">
+      <section className="ghav-section bg-ghav-offwhite px-6">
         <h2 className="text-3xl font-bold text-center mb-10">listen to the latest</h2>
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
           <a
             href="https://soundcloud.com/paulogav/carry-on-paulo-gav"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-64 bg-gray-200 flex items-center justify-center hover:scale-105 transition"
+            className="group"
           >
-            carry On - ghav!
+            <img
+              src="/ghav/albums/carry-on.jpg"
+              alt="Carry On - ghav!"
+              className="w-full aspect-square object-cover rounded-lg shadow-md group-hover:scale-105 transition"
+            />
+            <p className="mt-3 text-center font-medium">
+              carry on
+            </p>
           </a>
           <a
             href="https://soundcloud.com/paulogav/late-night-drive"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-64 bg-gray-200 flex items-center justify-center hover:scale-105 transition"
+            className="group"
           >
-            late night drive - ghav!
+           <img
+              src="/ghav/albums/lnd-cover.jpg"
+              alt="Late Night Drive - ghav!"
+              className="w-full aspect-square object-cover rounded-lg shadow-md group-hover:scale-105 transition"
+            />
+            <p className="mt-3 text-center font-medium">
+              late night drive
+            </p>
           </a>
           <a
             href="https://soundcloud.com/paulogav/goin-dummy-freestyle-paulogav-x-dolce"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-64 bg-gray-200 flex items-center justify-center hover:scale-105 transition"
+            className="group"
           >
-            goin' dummy freestyle - ghav!
+            <img
+              src="/ghav/albums/goin-dummy.jpg"
+              alt="Goin Dummy Freestyle - ghav!"
+              className="w-full aspect-square object-cover rounded-lg shadow-md group-hover:scale-105 transition"
+            />
+            <p className="mt-3 text-center font-medium">
+              goin’ dummy freestyle
+            </p>
           </a>
         </div>
       </section>
