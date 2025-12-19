@@ -68,7 +68,7 @@ export default function GhavLandingPage() {
             className="group"
           >
            <img
-              src="/ghav/albums/lnd-cover.jpg"
+              src="/ghav/albums/lnd-cover.JPG"
               alt="Late Night Drive - ghav!"
               className="w-full aspect-square object-cover rounded-lg shadow-md group-hover:scale-105 transition"
             />
