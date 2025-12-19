@@ -19,14 +19,14 @@ export default function GhavLandingPage() {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
             <a
-              href="#"
+              href="https://soundcloud.com/paulogav"
               className="px-8 py-3 rounded-full bg-[#c7b8f5] text-white font-semibold hover:scale-105 transition"
             >
               🎧 listen now
             </a>
 
             <a
-              href="#"
+              href="https://linktr.ee/giftofghav"
               className="px-8 py-3 rounded-full bg-[#ff7c81] text-white font-semibold hover:scale-105 transition"
             >
               💬 join the community
@@ -54,14 +54,67 @@ export default function GhavLandingPage() {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
-            {[1, 2, 3].map((i) => (
-              <div
-                key={i}
-                className="aspect-square bg-gray-200 rounded-xl flex items-center justify-center text-gray-500"
-              >
-                album {i}
+
+            {/* ALBUM 1 */}
+            <a
+              href="https://soundcloud.com/paulogav/carry-on-paulo-gav"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <div className="aspect-square overflow-hidden rounded-xl bg-gray-200 shadow-md">
+                <img
+                  src="/ghav/albums/carry-on.jpg"
+                  alt="Album cover 1"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
-            ))}
+
+              <p className="mt-4 text-center font-medium text-gray-900">
+                carry on - ghav!
+              </p>
+            </a>
+
+            {/* ALBUM 2 */}
+            <a
+              href="https://soundcloud.com/paulogav/late-night-drive"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <div className="aspect-square overflow-hidden rounded-xl bg-gray-200 shadow-md">
+                <img
+                  src="/ghav/albums/lnd-cover.JPG"
+                  alt="Album cover 2"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+
+              <p className="mt-4 text-center font-medium text-gray-900">
+                late night drive - ghav!
+              </p>
+            </a>
+
+            {/* ALBUM 3 */}
+            <a
+              href="https://soundcloud.com/paulogav/goin-dummy-freestyle-paulogav-x-dolce"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <div className="aspect-square overflow-hidden rounded-xl bg-gray-200 shadow-md">
+                <img
+                  src="/ghav/albums/goin-dummy.jpg"
+                  alt="Album cover 3"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+
+              <p className="mt-4 text-center font-medium text-gray-900">
+                goin' dummy freestyle - ghav! x dolce
+              </p>
+            </a>
+
           </div>
         </div>
       </section>
