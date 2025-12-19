@@ -2,20 +2,32 @@
 
 import ReleaseCountdown from './ReleaseCountdown';
 
+type Track = {
+  title: string;
+  src: string;
+};
+
+const TRACKS: Track[] = [
+  { title: 'Burning Up', src: '/ghav/paranoia/burning-up.m4a' },
+  { title: 'Lost In Snow', src: '/ghav/paranoia/lost-in-snow.m4a' },
+  { title: 'Back to Reality', src: '/ghav/paranoia/back-to-reality.m4a' },
+  { title: 'Inside Eyes', src: '/ghav/paranoia/inside-eyes.mp4' }, // audio-only mp4 is OK
+  { title: 'On My Life (ft. A K.I.D)', src: '/ghav/paranoia/on-my-life.m4a' },
+  { title: 'All Falls Down – Demo', src: '/ghav/paranoia/all-falls-down.m4a' },
+];
 
 export default function ParanoiaPage() {
   return (
     <main className="bg-[#0f0f12] text-[#eaeaea]">
 
       {/* HERO */}
-        <section className="min-h-screen flex flex-col justify-center px-8 md:px-20">
-
+      <section className="min-h-screen flex flex-col justify-center px-8 md:px-20">
         <div className="mb-12">
-            <ReleaseCountdown />
+          <ReleaseCountdown />
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            PARANOIA
+          PARANOIA
         </h1>
 
         <p className="mt-6 max-w-xl text-lg text-[#9a9a9a]">
@@ -24,7 +36,7 @@ export default function ParanoiaPage() {
         </p>
 
         <p className="mt-4 text-sm uppercase tracking-widest text-[#ac3b3b]">
-          GHAV · 2025
+          GHAV x BLAZE · 2025
         </p>
       </section>
 
@@ -51,25 +63,31 @@ export default function ParanoiaPage() {
           Tracklist
         </h2>
 
-        <ol className="space-y-6 max-w-2xl">
-          {[
-            "Track One",
-            "Track Two",
-            "Track Three",
-            "Track Four",
-            "Track Five",
-            "Track Six",
-          ].map((track, i) => (
+        <ol className="space-y-8 max-w-3xl">
+          {TRACKS.map((track, i) => (
             <li
-              key={i}
-              className="flex items-center justify-between border-b border-[#2a2a2e] pb-4"
+              key={track.src}
+              className="border border-[#2a2a2e] rounded-xl p-5 bg-[#121216]"
             >
-              <span className="text-lg">{track}</span>
+              <div className="flex items-center justify-between gap-6 mb-4">
+                <div className="flex items-center gap-4">
+                  <span className="text-sm text-[#9a9a9a] w-10">
+                    {(i + 1).toString().padStart(2, '0')}
+                  </span>
+                  <span className="text-lg font-medium">
+                    {track.title}
+                  </span>
+                </div>
 
-              {/* AUDIO EMBED GOES HERE */}
-              <span className="text-sm text-[#9a9a9a]">
-                WAV
-              </span>
+                <span className="text-xs uppercase tracking-widest text-[#9a9a9a]">
+                  audio
+                </span>
+              </div>
+
+              <audio controls preload="none" className="w-full">
+                <source src={track.src} />
+                Your browser does not support the audio element.
+              </audio>
             </li>
           ))}
         </ol>
@@ -84,8 +102,7 @@ export default function ParanoiaPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {[1, 2, 3].map((vid) => (
             <div key={vid} className="space-y-4">
-              {/* VIDEO EMBED GOES HERE */}
-              <div className="aspect-video bg-black flex items-center justify-center text-[#9a9a9a]">
+              <div className="aspect-video bg-black border border-[#2a2a2e] rounded-lg flex items-center justify-center text-[#9a9a9a]">
                 Livestream Clip {vid}
               </div>
 
