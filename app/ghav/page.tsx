@@ -19,7 +19,7 @@ export default function GhavLandingPage() {
             <img
               src="/ghav/brand/ghav-smiley.png"
               alt="ghav smiley"
-              className="w-16 md:w-20 opacity-90"
+              className="w-16 md:w-24 opacity-90"
             />
           </div>
 
@@ -207,7 +207,7 @@ export default function GhavLandingPage() {
             <img
               src="/ghav/brand/ghav-smiley.png"
               alt="ghav smiley"
-              className="w-12 opacity-80"
+              className="w-14 opacity-80"
             />
           </div>
 
