@@ -19,8 +19,9 @@ export default function GhavLandingPage() {
             <img
               src="/ghav/brand/ghav-smiley.png"
               alt="ghav smiley"
-              className="w-16 md:w-24 opacity-90"
+              className="w-16 md:w-24 opacity-90 ghav-smiley-animate"
             />
+
           </div>
 
           <p className="text-xl md:text-2xl text-gray-700 max-w-2xl">
@@ -207,12 +208,13 @@ export default function GhavLandingPage() {
             <img
               src="/ghav/brand/ghav-smiley.png"
               alt="ghav smiley"
-              className="w-14 opacity-80"
+              className="w-14 opacity-80 ghav-smiley-animate"
             />
+
           </div>
 
           {/* RIGHT — SOCIAL LINKS */}
-          <div className="flex gap-6 text-gray-600">
+          <div className="flex gap-6 text-gray-900">
             <a
               href="https://www.instagram.com/giftofghav"
               target="_blank"
