@@ -7,33 +7,45 @@ export default function GhavLandingPage() {
     <main className="font-sans text-gray-900 bg-ghav-offwhite">
 
       {/* HERO */}
-      <section className="min-h-[85vh] flex items-center justify-center px-6">
-        <div className="max-w-3xl text-center space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold">
-            hey, glad you're here.
-          </h1>
+      <section className="ghav-section bg-ghav-offwhite min-h-[80vh] flex items-center justify-center px-6">
+        <div className="flex flex-col items-center text-center space-y-8 max-w-3xl">
 
-          <p className="text-xl md:text-2xl text-gray-700">
-            welcome to ghav! — let’s listen, laugh, and build something real together.
+          {/* TITLE + IMAGE GROUP */}
+          <div className="flex items-center gap-6">
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              hey, glad you're here.
+            </h1>
+
+            <img
+              src="/ghav/brand/ghav-smiley.png"
+              alt="ghav smiley"
+              className="w-16 md:w-20 opacity-90"
+            />
+          </div>
+
+          <p className="text-xl md:text-2xl text-gray-700 max-w-2xl">
+            welcome to ghav! — let's listen, laugh, and build something real together.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a
               href="https://soundcloud.com/paulogav"
-              className="px-8 py-3 rounded-full bg-[#c7b8f5] text-white font-semibold hover:scale-105 transition"
+              className="px-8 py-3 bg-[#c7b8f5] text-white rounded-md font-semibold hover:scale-105 transition"
             >
               🎧 listen now
             </a>
 
             <a
               href="https://linktr.ee/giftofghav"
-              className="px-8 py-3 rounded-full bg-[#ff7c81] text-white font-semibold hover:scale-105 transition"
+              className="px-8 py-3 bg-[#ff7c81] text-white rounded-md font-semibold hover:scale-105 transition"
             >
               💬 join the community
             </a>
           </div>
+
         </div>
       </section>
+
 
       {/* ABOUT */}
       <section className="bg-ghav-lavender py-24 px-6">
@@ -153,7 +165,7 @@ export default function GhavLandingPage() {
           </p>
 
           <a
-            href="#"
+            href="https://discord.com/invite/Zn4W9Tqr"
             className="inline-block px-8 py-3 rounded-full bg-[#c7b8f5] text-white font-semibold hover:scale-105 transition"
           >
             join the community
@@ -173,7 +185,7 @@ export default function GhavLandingPage() {
           </p>
 
           <a
-            href="#"
+            href="https://commoninja.site/773366b6-ebe0-4dd3-b77a-76bf70f22ba9"
             className="inline-block px-8 py-3 rounded-full bg-[#ff7c81] text-white font-semibold hover:scale-105 transition"
           >
             join the email list
@@ -182,24 +194,50 @@ export default function GhavLandingPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-ghav-lavender py-12 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between gap-8">
+      <footer className="bg-ghav-lavender py-12">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center sm:items-center justify-between gap-8 px-6">
 
-          <p className="text-gray-900 text-sm">
-            ghav! is a feeling, not a person.
-            <br />
-            thanks for being here.
-          </p>
+          {/* LEFT — TEXT + IMAGE */}
+          <div className="flex items-center gap-4 text-left">
+            <p className="text-gray-600 text-sm leading-relaxed">
+              ghav! is a feeling, not a person.<br />
+              thanks for being here.
+            </p>
 
-          <div className="flex gap-6 text-gray-900 font-medium">
-            <a href="#" className="flex items-center gap-2">
-              <Instagram size={18} /> instagram
+            <img
+              src="/ghav/brand/ghav-smiley.png"
+              alt="ghav smiley"
+              className="w-12 opacity-80"
+            />
+          </div>
+
+          {/* RIGHT — SOCIAL LINKS */}
+          <div className="flex gap-6 text-gray-600">
+            <a
+              href="https://www.instagram.com/giftofghav"
+              target="_blank"
+              className="flex items-center gap-2 hover:text-gray-900 transition"
+            >
+              <Instagram size={18} />
+              instagram
             </a>
-            <a href="#" className="flex items-center gap-2">
-              <Twitch size={18} /> twitch
+
+            <a
+              href="https://www.twitch.tv/giftofghav"
+              target="_blank"
+              className="flex items-center gap-2 hover:text-gray-900 transition"
+            >
+              <Twitch size={18} />
+              twitch
             </a>
-            <a href="#" className="flex items-center gap-2">
-              <Music size={18} /> soundcloud
+
+            <a
+              href="https://soundcloud.com/paulogav"
+              target="_blank"
+              className="flex items-center gap-2 hover:text-gray-900 transition"
+            >
+              <Music size={18} />
+              soundcloud
             </a>
           </div>
 
