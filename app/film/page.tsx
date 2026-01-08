@@ -42,7 +42,7 @@ export default function FilmPage() {
               onPlay={() => sClick(0.22)}
               onPause={() => sClick(0.18)}
             />
-            <h2 className="text-2xl font-semibold">Shrek — Scene Redesign</h2>
+            <h2 className="text-2xl font-semibold">The Incredibles — Scene Redesign</h2>
             <p className="text-zinc-400">
               Dense FX layers supporting superpowered motion, impacts, and speed.
             </p>
@@ -128,7 +128,7 @@ export default function FilmPage() {
               onPlay={() => sClick(0.22)}
               onPause={() => sClick(0.18)}
             />
-            <h2 className="text-2xl font-semibold">Shrek — Scene Redesign</h2>
+            <h2 className="text-2xl font-semibold">The Matrix — Scene Redesign</h2>
             <p className="text-zinc-400">
               Heavy impacts, fast whooshes, and detailed cloth movement driving high-intensity combat.
             </p>
