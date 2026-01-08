@@ -31,38 +31,38 @@ export default function FilmPage() {
       </header>
 
       <div className="space-y-32">
-        {/* ───────────────── BATMAN ───────────────── */}
+        {/* ───────────────── THE INCREDIBLES ───────────────── */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* VIDEO */}
           <div className="space-y-4">
             <video
-              src="/film/batman-enc1.mp4"
+              src="/film/incrediblesv1.mp4"
               controls
               className="w-full rounded-lg border border-zinc-700"
               onPlay={() => sClick(0.22)}
               onPause={() => sClick(0.18)}
             />
-            <h2 className="text-2xl font-semibold">Batman Begins — Scene Redesign</h2>
+            <h2 className="text-2xl font-semibold">Shrek — Scene Redesign</h2>
             <p className="text-zinc-400">
-              Grounded realism with detailed Foley, environmental texture, and cinematic dynamics.
+              Dense FX layers supporting superpowered motion, impacts, and speed.
             </p>
           </div>
 
           {/* SESSION */}
           <div className="space-y-6">
             <video
-              src="/film/batman-session.mp4"
+              src="/film/incredibles-session.mp4"
               controls
               className="w-full rounded-lg border border-zinc-700"
               onPlay={() => sClick(0.22)}
               onPause={() => sClick(0.18)}
             />
             <div className="text-sm text-zinc-400">
-              Pro Tools session walkthrough showing organization, routing, and mix structure.
+              Pro Tools session breakdown focused on complex FX layering and timing for animated action.
             </div>
 
             <Link
-              href="/downloads/batman-session.ptx"
+              href="/downloads/incredibles-session.ptx"
               className="inline-block mt-4 px-4 py-2 border border-zinc-600 rounded hover:bg-zinc-800 transition"
               onMouseDown={sDownloadPTX}
               onKeyDown={(e) => {
@@ -117,31 +117,89 @@ export default function FilmPage() {
           </div>
         </section>
 
-        {/* ───────────────── MATRIX (COMING SOON) ───────────────── */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="flex items-center justify-center border border-dashed border-zinc-700 rounded-lg min-h-[300px]">
-            <div className="text-center text-zinc-500">
-              <h2 className="text-2xl font-semibold mb-2">The Matrix</h2>
-              <p>Scene redesign coming soon.</p>
-            </div>
+        {/* ───────────────── MATRIX ───────────────── */}
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* VIDEO */}
+          <div className="space-y-4">
+            <video
+              src="/film/matrixv1.mp4"
+              controls
+              className="w-full rounded-lg border border-zinc-700"
+              onPlay={() => sClick(0.22)}
+              onPause={() => sClick(0.18)}
+            />
+            <h2 className="text-2xl font-semibold">Shrek — Scene Redesign</h2>
+            <p className="text-zinc-400">
+              Heavy impacts, fast whooshes, and detailed cloth movement driving high-intensity combat.
+            </p>
           </div>
 
-          <div className="flex items-center justify-center border border-dashed border-zinc-700 rounded-lg min-h-[300px]">
-            <p className="text-zinc-500">Session walkthrough coming soon.</p>
+          {/* SESSION */}
+          <div className="space-y-6">
+            <video
+              src="/film/matrix-session.mp4"
+              controls
+              className="w-full rounded-lg border border-zinc-700"
+              onPlay={() => sClick(0.22)}
+              onPause={() => sClick(0.18)}
+            />
+            <div className="text-sm text-zinc-400">
+              Pro Tools session walkthrough detailing layered combat design with cloth, impacts, and spatial movement.
+            </div>
+
+            <Link
+              href="/downloads/matrix-session.ptx"
+              className="inline-block mt-4 px-4 py-2 border border-zinc-600 rounded hover:bg-zinc-800 transition"
+              onMouseDown={sDownloadPTX}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') sDownloadPTX();
+              }}
+            >
+              Download Pro Tools Session (.ptx)
+            </Link>
           </div>
         </section>
 
-        {/* ───────────────── INCREDIBLES (COMING SOON) ───────────────── */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="flex items-center justify-center border border-dashed border-zinc-700 rounded-lg min-h-[300px]">
-            <div className="text-center text-zinc-500">
-              <h2 className="text-2xl font-semibold mb-2">The Incredibles</h2>
-              <p>Scene redesign coming soon.</p>
-            </div>
+        {/* ───────────────── BATMAN ───────────────── */}
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* VIDEO */}
+          <div className="space-y-4">
+            <video
+              src="/film/batman-enc1.mp4"
+              controls
+              className="w-full rounded-lg border border-zinc-700"
+              onPlay={() => sClick(0.22)}
+              onPause={() => sClick(0.18)}
+            />
+            <h2 className="text-2xl font-semibold">Batman Begins — Scene Redesign</h2>
+            <p className="text-zinc-400">
+              Grounded realism with detailed Foley, environmental texture, and cinematic dynamics.
+            </p>
           </div>
 
-          <div className="flex items-center justify-center border border-dashed border-zinc-700 rounded-lg min-h-[300px]">
-            <p className="text-zinc-500">Session walkthrough coming soon.</p>
+          {/* SESSION */}
+          <div className="space-y-6">
+            <video
+              src="/film/batman-session.mp4"
+              controls
+              className="w-full rounded-lg border border-zinc-700"
+              onPlay={() => sClick(0.22)}
+              onPause={() => sClick(0.18)}
+            />
+            <div className="text-sm text-zinc-400">
+              Pro Tools session walkthrough showing organization, routing, and mix structure.
+            </div>
+
+            <Link
+              href="/downloads/batman-session.ptx"
+              className="inline-block mt-4 px-4 py-2 border border-zinc-600 rounded hover:bg-zinc-800 transition"
+              onMouseDown={sDownloadPTX}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') sDownloadPTX();
+              }}
+            >
+              Download Pro Tools Session (.ptx)
+            </Link>
           </div>
         </section>
       </div>
